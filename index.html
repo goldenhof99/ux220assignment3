@@ -1,439 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45546538-4"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabe Oldenhof Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #abacae;
+            color: #000000;
+        }
 
-        gtag('config', 'UA-45546538-4');
-    </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#2196F3">
-    <title>Rich Hildred</title>
+        nav {
+            background-color: #000000;
+        }
 
-    <!-- CSS  -->
-    <link href="min/plugin-min.css" type="text/css" rel="stylesheet">
-    <link href="min/custom-min.css" type="text/css" rel="stylesheet">
+        nav a {
+            color: #fff;
+        }
+
+        header {
+            background-color: #000000;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+
+        .section-title {
+            color: #000000;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #626262;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .custom-card {
+            transition: transform 0.3s;
+        }
+
+        .custom-card:hover {
+            transform: scale(1.05);
+        }
+
+        .portfolio-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        .no-padding {
+            padding: 10px 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+        .card .responsive-img {
+            height: 250px; 
+            object-fit: cover; 
+        }
+
+    </style>
 </head>
 
-<body id="top" class="scrollspy">
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo">Gabe Oldenhof</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Header -->
-    <header>
-        <!-- Pre Loader -->
-        <div id="loader-wrapper">
-            <div id="loader"></div>
-
-            <div class="loader-section section-left"></div>
-            <div class="loader-section section-right"></div>
-
-        </div>
-
-        <!--Navigation-->
-        <div class="navbar-fixed">
-            <nav id="nav_f" class="default_color" role="navigation">
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="#" id="logo-container" class="brand-logo">Rich Hildred</a>
-                        <ul class="right hide-on-med-and-down">
-                            <li><a href="#intro">Service</a></li>
-                            <li><a href="#work">Work</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="https://github.com/joashp/material-design-template"
-                                    target="_blank">Download</a></li>
-                        </ul>
-                        <ul id="nav-mobile" class="side-nav">
-                            <li><a href="#intro">Service</a></li>
-                            <li><a href="#work">Work</a></li>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="https://github.com/joashp/material-design-template"
-                                    target="_blank">Download</a></li>
-                        </ul>
-                        <a href="#" data-activates="nav-mobile" class="button-collapse"><i
-                                class="mdi-navigation-menu"></i></a>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <header class="center-align">
+        <h1>Gabe Oldenhof's Experiences and Aspirations </h1>
+        <p>Experiences from the past and goals from the future. The perfect recipe for the present.</p>
+        <img src=https://media.licdn.com/dms/image/v2/D4E03AQEOw_ZyK8dUww/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728914135322?e=1738800000&v=beta&t=jR4YdiKegzgxi7WabjdMyo92MH27vQF6BJFTyJY36wA
+            alt="Gabe Oldenhof" class="responsive-img" width="300">
     </header>
-    <!-- Main -->
-    <main>
-        <!--Hero-->
-        <section class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <h1 class="text_h center header cd-headline letters type">
-                    <span>I Love</span>
-                    <span class="cd-words-wrapper waiting">
-                        <b class="is-visible">creating</b>
-                        <b>designing</b>
-                        <b>developing</b>
-                    </span>
-                </h1>
-            </div>
-        </section>
 
-        <!--Intro and service-->
-        <section id="intro" class="section scrollspy">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12">
-                        <h2 class="center header text_h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            <span class="span_h2"> Phasellus </span>vestibulum lorem risus, nec suscipit lorem <span
-                                class="span_h2"> laoreet quis.</span> </h2>
-                    </div>
+    <!-- About Section -->
+    <section id="about" class="container section">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            Hello my name is Gabe Oldenhof. These are the experiences that are most defining to me. I have graded each
+            of my experiences on the criteria of how much they have impacted myself positively. Additionally there will
+            be a section dedicated to my future in terms the goals I have in various aspects of my life.
+        </p>
+    </section>
 
-                    <div class="col s12 m4 l4">
-                        <div class="center promo promo-example">
-                            <i class="mdi-image-flash-on"></i>
-                            <h5 class="promo-caption">Speeds up development</h5>
-                            <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="center promo promo-example">
-                            <i class="mdi-social-group"></i>
-                            <h5 class="promo-caption">User Experience Focused</h5>
-                            <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus.</p>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="center promo promo-example">
-                            <i class="mdi-hardware-desktop-windows"></i>
-                            <h5 class="promo-caption">Fully responsive</h5>
-                            <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-                                commodo ligula eget dolor. Aenean massa.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="container section">
+        <h2 class="section-title">Past Experiences</h2>
 
-        <!--Work-->
-        <section class="section scrollspy" id="work">
-            <div class="container">
-                <h2 class="header text_b">Work </h2>
-                <div class="row">
-                    <div class="col s12 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/project1.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p><a href="#">Project link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>Here is some more information about this project that is only revealed once clicked
-                                    on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/project2.jpeg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p><a href="#">Project link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>Here is some more information about this project that is only revealed once clicked
-                                    on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/project3.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p><a href="#">Project link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>Here is some more information about this project that is only revealed once clicked
-                                    on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/project4.jpg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p><a href="#">Project link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>Here is some more information about this project that is only revealed once clicked
-                                    on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/project5.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p><a href="#">Project link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>Here is some more information about this project that is only revealed once clicked
-                                    on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m4 l4">
-                        <div class="card">
-                            <div class="card-image waves-effect waves-block waves-light">
-                                <img class="activator" src="img/project6.jpeg">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-more-vert right"></i></span>
-                                <p><a href="#">Project link</a></p>
-                            </div>
-                            <div class="card-reveal">
-                                <span class="card-title grey-text text-darken-4">Project Title <i
-                                        class="mdi-navigation-close right"></i></span>
-                                <p>Here is some more information about this project that is only revealed once clicked
-                                    on.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--Parallax-->
-        <section class="parallax-container">
-            <div class="parallax"><img src="img/parallax1.png"></div>
-        </section>
-
-        <!--Team-->
-        <section class="section scrollspy" id="team">
-            <div class="container">
-                <h2 class="header text_b"> Our Team </h2>
-                <div class="row">
-                    <div class="col s12 m3">
-                        <div class="card card-avatar">
-                            <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="img/avatar1.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Flash <br />
-                                    <small><em><a class="red-text text-darken-1" href="#">CEO</a></em></small></span>
-                                <p>
-                                    <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                        <i class="fa fa-twitter-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2"
-                                        href="https://plus.google.com/u/0/+JoashPereira">
-                                        <i class="fa fa-google-plus-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                        <i class="fa fa-linkedin-square"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m3">
-                        <div class="card card-avatar">
-                            <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="img/avatar2.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Cat Woman<br />
-                                    <small><em><a class="red-text text-darken-1" href="#">Designer</a></em></small>
-                                </span>
-                                <p>
-                                    <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                        <i class="fa fa-twitter-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2"
-                                        href="https://plus.google.com/u/0/+JoashPereira">
-                                        <i class="fa fa-google-plus-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                        <i class="fa fa-linkedin-square"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m3">
-                        <div class="card card-avatar">
-                            <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="img/avatar3.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">
-                                    Capt. America <br />
-                                    <small><em><a class="red-text text-darken-1" href="#">CMO</a></em></small></span>
-                                <p>
-                                    <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                        <i class="fa fa-twitter-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2"
-                                        href="https://plus.google.com/u/0/+JoashPereira">
-                                        <i class="fa fa-google-plus-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                        <i class="fa fa-linkedin-square"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 m3">
-                        <div class="card card-avatar">
-                            <div class="waves-effect waves-block waves-light">
-                                <img class="activator" src="img/avatar4.png">
-                            </div>
-                            <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">Robin<br />
-                                    <small><em><a class="red-text text-darken-1"
-                                                href="#">Developer</a></em></small></span>
-                                <p>
-                                    <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                        <i class="fa fa-twitter-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2"
-                                        href="https://plus.google.com/u/0/+JoashPereira">
-                                        <i class="fa fa-google-plus-square"></i>
-                                    </a>
-                                    <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                        <i class="fa fa-linkedin-square"></i>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <!--Footer-->
-    <footer id="contact" class="page-footer default_color scrollspy">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <form class="col s12" action="contact.php" method="post">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <i class="mdi-action-account-circle prefix white-text"></i>
-                                <input id="icon_prefix" name="name" type="text" class="validate white-text">
-                                <label for="icon_prefix" class="white-text">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <i class="mdi-communication-email prefix white-text"></i>
-                                <input id="icon_email" name="email" type="email" class="validate white-text">
-                                <label for="icon_email" class="white-text">Email-id</label>
-                            </div>
-                            <div class="input-field col s12">
-                                <i class="mdi-editor-mode-edit prefix white-text"></i>
-                                <textarea id="icon_prefix2" name="message"
-                                    class="materialize-textarea white-text"></textarea>
-                                <label for="icon_prefix2" class="white-text">Message</label>
-                            </div>
-                            <div class="col offset-s7 s5">
-                                <button class="btn waves-effect waves-light red darken-1" type="submit">Submit
-                                    <i class="mdi-content-send right white-text"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">joashpereira.com</h5>
-                    <ul>
-                        <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
-                        <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Social</h5>
-                    <ul>
-                        <li>
-                            <a class="white-text" href="https://www.behance.net/joashp">
-                                <i class="small fa fa-behance-square white-text"></i> Behance
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="small fa fa-facebook-square white-text"></i> Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://github.com/joashp">
-                                <i class="small fa fa-github-square white-text"></i> Github
-                            </a>
-                        </li>
-                        <li>
-                            <a class="white-text" href="https://www.linkedin.com/in/joashp">
-                                <i class="small fa fa-linkedin-square white-text"></i> Linkedin
-                            </a>
-                        </li>
-                    </ul>
+        <div class="row">
+        <!-- Case Competition Image -->
+        <div class="col s12 m6">
+            <div class="card custom-card">
+                <div class="card-content no-padding">
+                    <span class="card-title">Case Competition</span>
+                    <img src="https://media.licdn.com/dms/image/v2/D5610AQHxlnZ_0Cmn6Q/image-shrink_800/image-shrink_800/0/1714167844311?e=1733774400&v=beta&t=8IlHhW_UseHms37fNHg6pgWXbsDGOgJwm-YSdARMkuQ" 
+                        alt="Case Competition" 
+                        class="responsive-img portfolio-image">
+                    <p>
+                        Winning the Laurier Case Competition in March 2024. What was so good about it was the sheer will and determination it took to come up with a grand and professional solution. My favorite memory was staying up for the majority of the night and putting my all into the work. Overall grade: A.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright default_color">
-            <div class="container">
-                Made by <a class="white-text" href="http://joashpereira.com">Joash Pereira</a>. Thanks to <a
-                    class="white-text" href="http://materializecss.com/">materializecss</a>
+
+        <!-- High School Graduation Image -->
+        <div class="col s12 m6">
+            <div class="card custom-card">
+                <div class="card-content no-padding">
+                    <span class="card-title">High School Graduation</span>
+                    <img src="https://www.vancopayments.com/hs-fs/hubfs/Graduation%20-%20Cap%20throw.png?width=1640&height=924&name=Graduation%20-%20Cap%20throw.png" 
+                        alt="High School Graduation" 
+                        class="responsive-img portfolio-image">
+                    <p>
+                        Graduating high school in June 2023 was a bittersweet moment. The best part was moving on to new opportunities, but I miss the friendships I formed. It was truly a surreal moment in time, one that is unforgettable  Favorite memory: throwing our grad caps in the air. Overall grade: B.
+                    </p>
+                </div>
             </div>
         </div>
+
+        <!-- Ontario Baseball Championship Image -->
+        <div class="col s12 m6">
+            <div class="card custom-card">
+                <div class="card-content no-padding">
+                    <span class="card-title">Ontario Baseball Championship</span>
+                    <img src="https://cdn.britannica.com/84/236884-050-BD4D5672/Commissioners-trophy-world-series-major-league-baseball.jpg" 
+                        alt="Ontario Baseball Championship" 
+                        class="responsive-img portfolio-image">
+                    <p>
+                        Playing with the Aurora Jays in 2016 was unforgettable. Winning the championship game and celebrating with teammates created memories I’ll cherish forever. Overall grade: A.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- University Move-In Image -->
+        <div class="col s12 m6">
+            <div class="card custom-card">
+                <div class="card-content no-padding">
+                    <span class="card-title">University Move-In</span>
+                    <img src="https://reslife.umd.edu/sites/default/files/styles/optimized/public/2022-09/IMG-1216.jpg?itok=do-NZ-Gu" 
+                        alt="University Move-In" 
+                        class="responsive-img portfolio-image">
+                    <p>
+                        Moving into Expositor Place at Wilfrid Laurier University in September 2024 was my first taste of independence. Meeting new friends made it memorable, despite feeling homesick. Overall grade: B.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- G2 Driver's License Image -->
+        <div class="col s12 m6">
+            <div class="card custom-card">
+                <div class="card-content no-padding">
+                    <span class="card-title">G2 Driver's License</span>
+                    <img src="https://drivesmartgeorgia.com/wp-content/uploads/2015/03/Road-Test-final.jpg" 
+                        alt="G2 Driver's License" 
+                        class="responsive-img portfolio-image">
+                    <p>
+                        Passing my G2 driver's license test in February 2022 was an exciting milestone. It gave me the freedom to drive on my own. Favorite memory: hearing “you passed.” Overall grade: A.
+                    </p>
+                </div>
+            </div>
+        </div>
+   
+
+        </div>
+    </section>
+
+    <!-- Future Goals Section -->
+    <section id="future-goals" class="container section">
+        <h2 class="section-title">Future Goals</h2>
+        <p>Here are some of the goals I aspire to achieve across various aspects of my life:</p>
+
+        <div class="row">
+            <!-- Family Goals -->
+            <div class="col s12 m6">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <img src="https://vanierinstitute.ca/wp-content/uploads/2024/02/Poly-Blog-Image.jpg" alt="Family Goals" class="responsive-img" style="height: 250px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Family</span>
+                        <ul>
+                            <li>Buy a car for my parents.</li>
+                            <li>Pay my parents back for my tuition.</li>
+                            <li>Go on a golf trip with my brother and Dad.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Career Goals -->
+            <div class="col s12 m6">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1661329955912-ebc4279f3b21?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YnVzaW5lc3MlMjBoYW5kc2hha2V8ZW58MHx8MHx8fDA%3D" alt="Career Goals" class="responsive-img" style="height: 250px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Career</span>
+                        <ul>
+                            <li>Get a job in the technology sales industry.</li>
+                            <li>Be the number 1 sales rep for my company.</li>
+                            <li>Love what I do every day so it does not feel like a job.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Recreation Goals -->
+            <div class="col s12 m6">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <img src="https://images.squarespace-cdn.com/content/v1/587aec812994ca23948fd074/b9f7c96f-39b0-46d6-90f1-4fb38212fd83/L1020217.jpg" alt="Recreation Goals" class="responsive-img" style="height: 250px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Recreation</span>
+                        <ul>
+                            <li>Backpacking across Europe.</li>
+                            <li>Living in Miami.</li>
+                            <li>Be a guest on the Joe Rogan Experience podcast.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Friends Goals -->
+            <div class="col s12 m6">
+                <div class="card custom-card">
+                    <div class="card-image">
+                        <img src="https://images.stockcake.com/public/d/0/f/d0f8ea4e-cfe2-4ca7-b302-dcf285553117_large/beach-friends-gathering-stockcake.jpg" alt="Friends Goals" class="responsive-img" style="height: 250px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Friends</span>
+                        <ul>
+                            <li>Start a podcast with my two roommates in college.</li>
+                            <li>Go on a boys' trip to the Maldives.</li>
+                            <li>Remain in contact with all of my closest friends.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container section">
+        <h2 class="section-title">Contact</h2>
+        <p>If you’d like to connect, feel free to reach out!</p>
+        <form>
+            <div class="input-field">
+                <input type="text" id="name" required>
+                <label for="name" style="color: black;">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" required>
+                <label for="email" style="color: black;">Email</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" class="materialize-textarea" required></textarea>
+                <label for="message" style="color: black;">Message</label>
+            </div>
+            <button type="submit" class="btn black">Send</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Gabe Oldenhof. All Rights Reserved.</p>
     </footer>
 
-
-    <!--  Scripts-->
-    <script src="min/plugin-min.js"></script>
-    <script src="min/custom-min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
 </html>
